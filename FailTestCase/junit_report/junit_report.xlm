@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="123.386" tests="5" skipped="0" failures="0" errors="0">
+<testcase classname="Login Functionality" name="verify Dashboad page User_ManagementBtn in User modules" time="39.347">
+<system-out><![CDATA[
+Given user_is_on_Admin_module_page..........................................passed
+When Enter LoginPageee Username_field.......................................passed
+When Enter LoginPageee Password_field.......................................passed
+When Enter LoginPageee submitBtn............................................passed
+When Click Admin_module.....................................................passed
+When Click User_ManagementBtn...............................................passed
+When Click UserBtn..........................................................passed
+Then System_Users_labels page has "Username","User Role","Employee Name","Status".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="verify Dashboad page User_ManagementBtn in ADDUsers_labels modules" time="41.308">
+<system-out><![CDATA[
+Given user_is_on_Admin_module_page..........................................passed
+When Enter LoginPageee Username_field.......................................passed
+When Enter LoginPageee Password_field.......................................passed
+When Enter LoginPageee submitBtn............................................passed
+When Click Admin_module.....................................................passed
+When Click User_ManagementBtn...............................................passed
+When Click UserBtn..........................................................passed
+When Click SystemUser_ADD_BTN...............................................passed
+Then ADDUsers_labels page has "User Role","Employee Name","Status","Username","Password","Confirm Password".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="verify AdminPage in JobModule in Job_Titles page" time="18.567">
+<system-out><![CDATA[
+Given user_is_on_Admin_module_page..........................................passed
+When Enter LoginPageee Username_field.......................................passed
+When Enter LoginPageee Password_field.......................................passed
+When Enter LoginPageee submitBtn............................................passed
+When Click Admin_module.....................................................passed
+When Click JobBtn...........................................................passed
+When Click Job_TitlesBtn....................................................passed
+Then varify DashboadPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewJobTitleList".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="verify AdminPage in QualificationsModule in EducationBtn page" time="13.38">
+<system-out><![CDATA[
+Given user_is_on_Admin_module_page..........................................passed
+When Enter LoginPageee Username_field.......................................passed
+When Enter LoginPageee Password_field.......................................passed
+When Enter LoginPageee submitBtn............................................passed
+When Click Admin_module.....................................................passed
+When Click QualificationsBtn................................................passed
+When Click EducationBtn.....................................................passed
+Then varify DashboadPagee "Url" IsDisplayed "https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewEducation".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="verify Loginpage" time="10.477">
+<system-out><![CDATA[
+Given user_is_on_LoginPage..................................................passed
+When Enter LoginPage Username_field.........................................passed
+When Enter LoginPage submitBtn..............................................passed
+Then varify LoginPage "Errormessage" IsDisplayed "Required".................passed
+]]></system-out>
+</testcase>
+</testsuite>

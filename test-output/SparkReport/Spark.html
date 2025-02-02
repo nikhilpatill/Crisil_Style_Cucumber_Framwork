@@ -1,0 +1,683 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Nikhil_Automation_Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Ecommerce_Automation_Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 2, 2025 06:27:13 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 2, 2025 06:27:13 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 2, 2025 06:28:11 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>2</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='13%'><b>3</b> steps passed</small></div>
+<div>
+<small data-tooltip='13%'><b>3</b> steps failed,
+<b>16</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Login Functionality":55.862
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@date</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>AppName</td>
+<td>QAAutomation</td>
+</tr>
+<tr>
+<td>user</td>
+<td>Automation Developer</td>
+</tr>
+<tr>
+<td>build</td>
+<td>All Automation batches</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 3,
+failGrandChild: 3,
+warningGrandChild: 0,
+skipGrandChild: 16,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@date</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality</p>
+            <p class="text-sm">
+              <span>6:27:15 pm</span> / <span>00:00:55:862</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Login Functionality</h5>
+<span class='badge badge-success'>02.02.2025 6:27:15 pm</span>
+<span class='badge badge-danger'>02.02.2025 6:28:11 pm</span>
+<span class='badge badge-default'>00:00:55:862</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>verify Dashboad page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="org.stepDefinations.CrisilAdminStepDef.user_is_on_admin_module_pageee()">
+                <span>Given user_is_on_Admin_module_pageee</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="org.stepDefinations.CrisilAdminStepDef.enter_in_field(java.lang.String,java.lang.String)">
+                <span>When Enter "Admin" in "Username" field</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//label[normalize-space('Username')]/following::input[1])[1]"}
+  (Session info: chrome=116.0.5845.96)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [da08e71522dfc31bbaf59289479c73ad, findElement {using=xpath, value=(//label[normalize-space('Username')]/following::input[1])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.96, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Nikhil\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56624}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56624/devtoo..., se:cdpVersion: 116.0.5845.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da08e71522dfc31bbaf59289479c73ad
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.stepDefinations.Compoent_Operation.insertXpathElementText(Compoent_Operation.java:66)
+	at org.stepDefinations.AdminpageOpeartion.enterInTextfield(AdminpageOpeartion.java:39)
+	at org.stepDefinations.CrisilAdminStepDef.enter_in_field(CrisilAdminStepDef.java:39)
+	at ✽.Enter "Admin" in "Username" field(file:///C:/Users/Nikhil/Desktop/Crisil_style_workspace/Cucumber_testNg_paraellel_2024-master/./src/test/resources/org/features/Csrisil_AdminModel.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.enter_in_field(java.lang.String,java.lang.String)">
+                <span>When Enter "admin123" in "password" field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.click_on_button(java.lang.String)">
+                <span>When Click on "Login" button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.varify_dashboad_pagee_is_displayedd(java.lang.String,java.lang.String)">
+                <span>Then varify DashboadPagee "Url" IsDisplayedd "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.varify_dashboad_pagee_is_displayedd(java.lang.String,java.lang.String)">
+                <span>Then varify DashboadPagee "Title" IsDisplayedd "OrangeHRM"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>org.hooks.AppHooks.takeScreenshot()</span>
+      <div>verifyDashboadpage.png
+          <div class="row mb-3"><div class="col-md-3">
+        <a href="data:image/png;base64,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" data-featherlight="image"><span class="badge badge-gradient-primary">base64 img</span></a>
+        
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log fail-bg mr-2">Fail</span>verify Dashboad Admin_page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="org.stepDefinations.CrisilAdminStepDef.user_is_on_admin_module_pageee()">
+                <span>Given user_is_on_Admin_module_pageee</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="org.stepDefinations.CrisilAdminStepDef.enter_in_field(java.lang.String,java.lang.String)">
+                <span>When Enter "Admin" in "Username" field</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: (//label[normalize-space('Username')]/following::input[1])[1]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.stepDefinations.Compoent_Operation.insertXpathElementText(Compoent_Operation.java:66)
+	at org.stepDefinations.AdminpageOpeartion.enterInTextfield(AdminpageOpeartion.java:39)
+	at org.stepDefinations.CrisilAdminStepDef.enter_in_field(CrisilAdminStepDef.java:39)
+	at ✽.Enter "Admin" in "Username" field(file:///C:/Users/Nikhil/Desktop/Crisil_style_workspace/Cucumber_testNg_paraellel_2024-master/./src/test/resources/org/features/Csrisil_AdminModel.feature:16)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.enter_in_field(java.lang.String,java.lang.String)">
+                <span>When Enter "admin123" in "password" field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.click_on_button(java.lang.String)">
+                <span>When Click on "Login" button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.click_on_button(java.lang.String)">
+                <span>When Click on "Admin" button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.click_on_button(java.lang.String)">
+                <span>When Click on "Add" button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.varify_dashboad_pagee_is_displayedd(java.lang.String,java.lang.String)">
+                <span>Then varify DashboadPagee "TXT" IsDisplayedd "Add User"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.click_in_field(java.lang.String,java.lang.String)">
+                <span>When click "Admin" in "User Role" field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.enter_in_field(java.lang.String,java.lang.String)">
+                <span>When Enter "R" in "Employee Name" field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.click_in_field(java.lang.String,java.lang.String)">
+                <span>When click "Enabled" in "Status" field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.enter_in_field(java.lang.String,java.lang.String)">
+                <span>When Enter "nikhilpatil" in "AddUsername" field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.enter_in_field(java.lang.String,java.lang.String)">
+                <span>When Enter "nik@1345" in "AddPassword" field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.enter_in_field(java.lang.String,java.lang.String)">
+                <span>When Enter "nik@1345" in "AddConfirm Password" field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="org.stepDefinations.CrisilAdminStepDef.click_on_button(java.lang.String)">
+                <span>When Click on "Save" button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>org.hooks.AppHooks.takeScreenshot()</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.96)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [344f00dd51fe071084bbfd7400b2edfc, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.96, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Nikhil\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56654}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56654/devtoo..., se:cdpVersion: 116.0.5845.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 344f00dd51fe071084bbfd7400b2edfc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
+	at org.hooks.AppHooks.takeScreenshot(AppHooks.java:63)
+</textarea>
+      
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@date</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@date</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:27:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>verify Dashboad page</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.verify Dashboad page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:27:51 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>verify Dashboad Admin_page</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.verify Dashboad Admin_page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:27:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>When Enter "Admin" in "Username" field</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.verify Dashboad page.When Enter "Admin" in "Username" field</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>When Enter "Admin" in "Username" field</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.verify Dashboad Admin_page.When Enter "Admin" in "Username" field</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='30'>org.hooks.AppHooks.takeScreenshot()</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.verify Dashboad Admin_page.org.hooks.AppHooks.takeScreenshot()</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
