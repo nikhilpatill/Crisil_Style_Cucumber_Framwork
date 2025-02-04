@@ -44,16 +44,16 @@ public class CrisilAdminStepDef {
 		} else if (textFieldLabel.equalsIgnoreCase("AddUsername")) {
 			adminpageOpeartion.enterInTextfield(inputtext, textFieldLabel);
 
-		}else if (textFieldLabel.equalsIgnoreCase("AddPassword")) {
+		} else if (textFieldLabel.equalsIgnoreCase("AddPassword")) {
 			adminpageOpeartion.enterInTextfield(inputtext, textFieldLabel);
 
 		} else if (textFieldLabel.equalsIgnoreCase("AddConfirm Password")) {
 			adminpageOpeartion.enterInTextfield(inputtext, textFieldLabel);
 
-		}else if (textFieldLabel.equalsIgnoreCase("Employee Name")) {
+		} else if (textFieldLabel.equalsIgnoreCase("Employee Name")) {
 			adminpageOpeartion.enterInTextfieldeployeename(inputtext, textFieldLabel);
 
-		}   
+		}
 
 	}
 
@@ -73,7 +73,14 @@ public class CrisilAdminStepDef {
 	@When("Click on {string} button")
 	public void click_on_button(String txt) {
 
-		adminpageOpeartion.clickloginnbutton(txt);
+		if (txt.equalsIgnoreCase("nikhilpatil")) {
+
+			adminpageOpeartion.delete_user(txt);
+
+		} else {
+			adminpageOpeartion.clickloginnbutton(txt);
+
+		}
 
 	}
 

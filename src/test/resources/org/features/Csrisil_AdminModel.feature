@@ -25,7 +25,11 @@ Feature: Login Functionality
     When Enter "nikhilpatil" in "AddUsername" field   
     When Enter "nik@1345" in "AddPassword" field  
     When Enter "nik@1345" in "AddConfirm Password" field 
-    When Click on "Save" button  
+    When Click on "Save" button 
+    When Click on "nikhilpatil" button 
+     
+    
+    
    
   
       

@@ -3,6 +3,7 @@ package org.stepDefinations;
 import java.time.Duration;
 import java.util.ArrayList;
 
+import org.GenericMethod.GenericMethod;
 import org.hooks.AppHooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,12 +25,13 @@ public class AdminpageOpeartion {
 	WebDriver driver = AppHooks.driver;
 	AdminPageObject adminPageObject;
 	Compoent_Operation Compoent_Operation;
+	GenericMethod  gm;
 
 	public AdminpageOpeartion(WebDriver driver) {
 
 		adminPageObject = new AdminPageObject();
 		Compoent_Operation = new Compoent_Operation();
-
+		gm = new GenericMethod();
 	}
 	
 	
@@ -57,9 +59,17 @@ public class AdminpageOpeartion {
 
 	public void clickloginnbutton(String textfiledlabel) {
 
+		
 		Compoent_Operation.clickElemet(adminPageObject.clickOnButton(textfiledlabel));
 
 	}
+	
+    public void delete_user(String textfiledlabel) {
+
+    	gm.deleteActionIntable(driver, textfiledlabel);
+		
+	}
+	
 
 	public void varify_CurrentUrl(String ExpectdUrl) {
 		Waitlogic.waitForSecond(1);
